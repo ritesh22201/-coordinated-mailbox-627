@@ -137,7 +137,7 @@ nav {
     margin: auto;
     position: relative;
     top: 60px;
-    padding: 25px 45px 25px 45px;
+    padding: 25px 45px 5px 45px;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
 }
@@ -244,15 +244,12 @@ form > input{
 #cars-carousel{
     height: 400px;
     position: relative;
-    align-items: center;
     overflow: hidden;
 }
 
 #cars-carousel > div{
     transition: all 0.5s ease-in-out;
-    position: absolute;
-    width: 100%; 
-    
+    position: absolute; 
 }
 
 #cars-carousel img{
@@ -331,11 +328,11 @@ form > input{
 }
 
 #sec-4 > div{
-    width: 82%;
-    margin: auto;
+    width: 80%;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    grid-template-columns: repeat(5, 1fr);
+    margin-left: 90px;
 }
 
 #sec-4 > div > div{
@@ -441,6 +438,10 @@ form > input{
     font-weight: bold;
 }
 
+.footer-heading{
+    margin: 0 0 30px 100px;
+}
+
 .desc > div{
     width: 84%;
     line-height: 25px;
@@ -453,6 +454,58 @@ form > input{
 
 .desc > div > p{
     margin-bottom: 20px;
+}
+
+/* Burger-Section */
+
+#burger{
+    position: fixed;
+    top: 0px;
+    width: 33%;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 14px;
+    line-height: 50px;
+    height: 100vh;
+    background-color: gray;
+    color: black;
+    background-color: white;
+}
+
+#burger > div{
+    margin-left: 35px; 
+    display: flex;
+    align-items: center;   
+}
+
+#burger > div:nth-child(1){
+    margin: 0;
+    padding-left: 35px;
+    background-color: rgb(226, 225, 225);
+}
+
+#burger > div img{
+    width: 20px;
+}
+
+#burger a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+#burger > div:nth-child(2){
+    margin-left: 31px;
+}
+
+#burger i{
+    color: black;
+}
+
+#burger span{
+    margin-left: 190px;
+    color: green;
+    font-weight: bold;
 }
 
 /* Footer-Section */
