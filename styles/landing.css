@@ -55,6 +55,10 @@ body{
     font-family: sans-serif;
 }
 
+button, a{
+    cursor: pointer;
+}
+
 nav {
     background-color: black;
     padding: 20px 0;
