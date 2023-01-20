@@ -1,3 +1,19 @@
+// Hamburger Menu
+
+let hamburger = document.querySelector('.hamburger');
+let burgerMenu = document.getElementById('burger');
+let main = document.querySelector('main');
+
+hamburger.addEventListener('click', () => {
+  burgerMenu.style.display = 'block';
+})
+
+main.addEventListener('click', () => {
+  burgerMenu.style.display = 'none';
+  document.style.background = 'linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3))';
+})
+
+
 // Section-First
 
 let slidebox = document.getElementById('slider');
@@ -32,10 +48,18 @@ slideshow(Images);
 // Calculating the total earnings 
 
 let range = document.getElementById('range');
-let value = +range.value;
 let total = document.getElementById('total');
-let totalVal = 1536;
-total.textContent = totalVal;
+let totalVal = +total.textContent;
+// total.textContent = totalVal;
 range.addEventListener('input', () => {
-   totalVal += totalVal*value;
+  let value = Number(range.value);
+  total.textContent = "₹" + value*totalVal;
+})
+
+// Returning back to the landing page.
+
+let logo = document.getElementById('logo-icon');
+
+logo.addEventListener('click', () => {
+  window.location.href = './landing.html';
 })

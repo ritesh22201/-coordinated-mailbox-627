@@ -26,7 +26,7 @@
             <input type="number" placeholder="Enter Mobile Number" id="input">
         </div>
         <hr>
-        <div>Continue with Email ID</div>
+        <div id="email-btn">Continue with Email ID</div>
         <hr>
         <div class="images2">
             <span>Continue via Social</span>
@@ -34,6 +34,55 @@
             <img src="https://www.zoomcar.com/build/279de03b0c8ecdb4db56a79da6e775e6.svg" alt="google">
         </div>
     </section>
+
+    <!-- Sign-In-Window Pop Up for Mobile log in-->
+    <section id="pop-up">
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/2976/2976252.png" alt="left" id="left-img">
+            <h3>Enter Mobile Number</h3>
+            <div class="cont-1">
+                <div>
+                    <img src="https://zoomcar-assets.zoomcar.com/images/original/38ff9c58fe221677b6e8958c1caba43d35710fe2.png?1654779648"
+                        alt="flag-icon">
+                    <span> +91 </span>
+                </div>
+                <input type="number" placeholder="Mobile Number" id="mobile">
+            </div>
+
+            <div>
+                <button class="btn-sub">CONTINUE</button>
+            </div>
+        </div>
+
+        <!-- If the user is already registered -->
+        <div id="pass">
+            <h3>Enter Password</h3>
+            <input type="password" placeholder="Password" id="pass-inp">
+        </div>
+
+        <!-- If the user is not registered -->
+        <div id="">
+
+        </div>
+    </section>
+
+    <!-- Sign-In-Window Pop Up for Email log in-->
+
+    <section id="pop-up2">
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/2976/2976252.png" alt="left" id="left-img2">
+            <h3>Enter Email ID</h3>
+            <p>We'll verify if the email is registered with us</p>
+            <div class="cont-2">
+                <input type="email" placeholder="Email ID" id="email">
+            </div>
+            <div>
+                <button id="btn-sub2" class="btn-sub">CONTINUE</button>
+            </div>
+        </div>
+    </section>
+
 </body>
+<script src="./scripts/signup.js"></script>
 
 </html>
