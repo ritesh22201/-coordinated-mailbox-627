@@ -39,30 +39,37 @@
     <section id="pop-up">
         <div>
             <img src="https://cdn-icons-png.flaticon.com/512/2976/2976252.png" alt="left" id="left-img">
-            <h3>Enter Mobile Number</h3>
+            <h3>Enter Mobile Number & Password</h3>
             <div class="cont-1">
                 <div>
                     <img src="https://zoomcar-assets.zoomcar.com/images/original/38ff9c58fe221677b6e8958c1caba43d35710fe2.png?1654779648"
                         alt="flag-icon">
                     <span> +91 </span>
                 </div>
-                <input type="number" placeholder="Mobile Number" id="mobile">
+                <form id="form1">
+                    <input type="number" placeholder="Mobile Number" id="mobile"  required>
+                    <input type="password" placeholder="Password" id="password1" required>
+                    <input type="submit" value="SUBMIT" class="btn-sub">
+                </form>
             </div>
-
-            <div>
-                <button class="btn-sub">CONTINUE</button>
-            </div>
-        </div>
-
-        <!-- If the user is already registered -->
-        <div id="pass">
-            <h3>Enter Password</h3>
-            <input type="password" placeholder="Password" id="pass-inp">
         </div>
 
         <!-- If the user is not registered -->
-        <div id="">
-
+        <div id="register">
+            <img src="https://cdn-icons-png.flaticon.com/512/2976/2976252.png" alt="left" id="left-img" class="left-img3">
+            <h3>Enter your details</h3>
+            <form id="form2">
+                <input type="text" placeholder="Enter Your Name" id="name" required>
+                <input type="number" placeholder="Enter Mobile Number" id="mobile_no" required>
+                <input type="email" placeholder="Email ID" id="email_id" required>
+                <input type="password" placeholder="Enter Password" id="pass" required>
+                <select id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="submit" value="SUBMIT">
+            </form>
         </div>
     </section>
 
@@ -70,14 +77,15 @@
 
     <section id="pop-up2">
         <div>
-            <img src="https://cdn-icons-png.flaticon.com/512/2976/2976252.png" alt="left" id="left-img2">
+            <img src="https://cdn-icons-png.flaticon.com/512/2976/2976252.png" alt="left" id="left-img2" class="left-img4">
             <h3>Enter Email ID</h3>
             <p>We'll verify if the email is registered with us</p>
             <div class="cont-2">
-                <input type="email" placeholder="Email ID" id="email">
-            </div>
-            <div>
-                <button id="btn-sub2" class="btn-sub">CONTINUE</button>
+                <form id="form3">
+                    <input type="email" placeholder="Email ID" id="email" required>
+                    <input type="password" placeholder="Password" id="password2" required>
+                    <input type="submit" value="SUBMIT" id="btn-sub2">
+                </form>
             </div>
         </div>
     </section>
