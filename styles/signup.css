@@ -47,6 +47,8 @@ table {
     border-spacing: 0;
 }
 
+/* -------------------------------------------------------------------------------- */
+
 /* Cutom Styles */
 
 body{
@@ -169,9 +171,11 @@ button, a{
 }
 
 .cont-1 > div{
-    width: 95px;
+    width: 80px;
     height: 55px;
     display: flex;
+    position: absolute;
+    top: 140px;
     border-radius: 4px;
     align-items: center;
     justify-content: space-evenly;
@@ -180,10 +184,12 @@ button, a{
     margin-right: 20px;
 }
 
-#mobile{
+#form1 > input{
     width: 85%;
     padding: 19px 10px;
     border-radius: 4px;
+    margin-left: 110px;
+    margin-bottom: 20px;
     font-size: 15px;
     border: 2px solid rgb(7, 163, 54);
 }
@@ -191,7 +197,7 @@ button, a{
 .btn-sub{
     width: 90%;
     padding: 19px 0;
-    margin-top: 300px;
+    margin-top: 200px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -240,24 +246,45 @@ button, a{
     border-radius: 4px;
 }
 
-#btn-sub2{
-    width: 80%;
-    margin-left: 40px;
+#form3 > input{
+    margin-bottom: 20px;
 }
 
-/* Password input styling */
+#form3 > input:nth-child(3){
+    width: 90%;
+    margin-top: 200px;  
+    color: white;
+    font-weight: bold;
+}
 
-#pass{
+/* Form */
+
+#register{
     position: absolute;
-    top: 52px;
-    left: 252px;
+    top: 53px;
+    left: 251px;
     display: none;
 }
 
-#pass-inp{
-    width: 88%;
+#form2{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+#form2 > *{
     padding: 19px 10px;
     font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
     border: 2px solid rgb(7, 163, 54);
     border-radius: 4px;
+}
+
+#form2 > input:nth-last-child(1){
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 22px 0;
+    background-color: rgb(7, 163, 54);
 }

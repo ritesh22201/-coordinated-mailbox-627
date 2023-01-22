@@ -66,6 +66,14 @@ nav {
     justify-content: space-between;
 }
 
+.profile{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 30px;
+    left: 1110px;
+}
+
 .hamburger>div {
     width: 20px;
     height: 3px;
@@ -613,6 +621,30 @@ footer{
    color: blue;
 }
 
+#logout{
+    width: 24%;
+    background-color: rgb(11, 139, 150);
+    color: white;
+    height: 350px;
+    line-height: 30px;
+    border-radius: 8px;
+    padding: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 75px;
+    left: 910px;
+    display: none;
+}
+
+#logout button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(235, 8, 8);
+    border-radius: 7px;
+    color: white;
+}
 
 
 /* Media Query for medium and small screens */
